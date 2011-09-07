@@ -11,8 +11,8 @@
 
 #pragma mark - 
 #pragma mark WRAPI Constants ******************
-#define API_KEY @"f493f"    //Your personal API KEY                                        
-#define API_VERSION @"0.8"  //Wordreference API version
+#define API_KEY @"_YOURAPICODE_"    //Your personal API KEY  http://www.wordreference.com/docs/APIregistration.aspx                                      
+#define API_VERSION @"0.8"  	//Wordreference API version
 #define API_URL @"http://api.wordreference.com/%@/%@/json/%@/%@" //API URL format
 
 #pragma mark - 
