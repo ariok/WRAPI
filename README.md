@@ -20,8 +20,9 @@ You need eventually define which dictionary you need (i.e. from English (en) to 
 
 ##How to get data ##
 
-To manage response from Wordreference.com you need to implement the WRAPIDelegate with at least `translateDidFinish:` function 
+To manage response from Wordreference.com you need to implement the WRAPIDelegate with at least `translateDidFinish:` function. 
 
+The fastest way to obtain translation is accessing properties `termTranslationList` and `compoundTranslationList` after   `translateDidFinish`. Those two functions return an NSDictionary with a formatted representation of terms and sense in original and translated language.  
 
 ##Implement the `WRAPIDelegate` protocol##
 
