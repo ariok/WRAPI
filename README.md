@@ -2,7 +2,7 @@
 WRAPI is an Objective-c Wrapper for [http://www.wordreference.com](Wordreference.com) Api's. 
 
 ##How to request a translation##
-Drad and drop WRAPI Folder in your project (remember to include JSONKit too)
+Drag and drop WRAPI Folder in your project (remember to include JSONKit too)
 
 Include WRAPI.h in your project 
     #import "WRAPI.h"
@@ -121,15 +121,15 @@ You can use this function to warn your user:
 
 `-(void) notAllowedDictionaryRequest`
 
-Not every dictionary are supported (at the moment) by Wordreference.com for example you can't ask for Spanish to Jappanese translation. 
-This function is called after a request on a not supported dictionary.
+Not every dictionaries are supported (at the moment) by Wordreference.com for example you can't ask for Spanish to Jappanese translation. 
+This function is called after requesting a not supported dictionary.
 
 
 ** Redirect request **
 
 `-(void)translateRedirectTo:(NSString *)url`
 
-This function is an helper to intercept inverted request. For example if you request translation for the term "People" from Italian to English (thus, on dictionary @"item") this function is called with `url=@"enit"`
+This function is an helper to intercept inverted request. For example if you request translation for the term "People" from Italian to English (thus, on dictionary @"iten") this function is called with `url=@"enit"`
 
 
  
