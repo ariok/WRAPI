@@ -2,6 +2,7 @@
 WRAPI is an Objective-c Wrapper for [http://www.wordreference.com](Wordreference.com) Api's. 
 
 ##How to request a translation##
+
 Drag and drop WRAPI Folder in your project (remember to include JSONKit too)
 
 Include WRAPI.h in your project 
@@ -12,11 +13,13 @@ Init "WRAPI" and (optional, but required :P) define a delegate
      wrapi.delegate = self;
 
 ###Ask for translation###
+
 You need eventually define which dictionary you need (i.e. from English (en) to Frenc (fr)) and call `requestTerm: fromLanguage: toLanguage:` like in this example :
 
     [wrapi requestTerm:@"Love" fromLanguage:@"en" toLanguage:@"fr"]; 
 
 ##How to get data ##
+
 To manage response from Wordreference.com you need to implement the WRAPIDelegate with at least `translateDidFinish:` function 
 
 
@@ -101,7 +104,7 @@ This function is called when translation is completely successful terminated, `r
 
 
 
-**Translation not found **
+**Translation not found**
 
 `-(void)translationNotFound` 
 
@@ -117,7 +120,7 @@ You can use this function to warn your user:
             [alert beginSheetModalForWindow:[self window] modalDelegate:self didEndSelector:nil contextInfo:nil];
     } 
 
-** Call a not supported dictionary **
+**Call a not supported dictionary**
 
 `-(void) notAllowedDictionaryRequest`
 
@@ -125,7 +128,7 @@ Not every dictionaries are supported (at the moment) by Wordreference.com for ex
 This function is called after requesting a not supported dictionary.
 
 
-** Redirect request **
+**Redirect request**
 
 `-(void)translateRedirectTo:(NSString *)url`
 
