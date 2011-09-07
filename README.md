@@ -25,7 +25,7 @@ To manage response from Wordreference.com you need to implement the WRAPIDelegat
 
 ##Implement the `WRAPIDelegate` protocol##
 
-** Translation complete **
+###Translation complete###
 
 `-(void) translateDidFinish:(NSDictionary*) result;` 
 
@@ -104,7 +104,7 @@ This function is called when translation is completely successful terminated, `r
 
 
 
-**Translation not found**
+###Translation not found###
 
 `-(void)translationNotFound` 
 
@@ -120,7 +120,7 @@ You can use this function to warn your user:
             [alert beginSheetModalForWindow:[self window] modalDelegate:self didEndSelector:nil contextInfo:nil];
     } 
 
-**Call a not supported dictionary**
+###Call a not supported dictionary###
 
 `-(void) notAllowedDictionaryRequest`
 
@@ -128,7 +128,7 @@ Not every dictionaries are supported (at the moment) by Wordreference.com for ex
 This function is called after requesting a not supported dictionary.
 
 
-**Redirect request**
+###Redirect request###
 
 `-(void)translateRedirectTo:(NSString *)url`
 
