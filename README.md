@@ -6,7 +6,8 @@ WRAPI is an Objective-c Wrapper for [http://www.wordreference.com](Wordreference
 Drag and drop WRAPI Folder in your project (remember to include JSONKit too)
 
 Include WRAPI.h in your project 
-    #import "WRAPI.h"
+
+     #import "WRAPI.h"
 
 Init "WRAPI" and (optional, but required :P) define a delegate
      wrapi = [[WRAPI alloc] init];
