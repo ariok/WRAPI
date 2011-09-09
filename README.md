@@ -10,6 +10,7 @@ Include WRAPI.h in your project
      #import "WRAPI.h"
 
 Init "WRAPI" and (optional, but required :P) define a delegate
+
      wrapi = [[WRAPI alloc] init];
      wrapi.delegate = self;
 
