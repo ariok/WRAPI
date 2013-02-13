@@ -1,3 +1,5 @@
+#ATTENTION: This is an old discontinued project.
+
 #WRAP: WorldRefecence.com API Wrapper#
 WRAPI is an Objective-c Wrapper for [http://www.wordreference.com](Wordreference.com) Api. 
 
